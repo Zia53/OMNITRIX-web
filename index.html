@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Omnitrix Web</title>
+  <style>
+    body { background-color: black; color: lime; font-family: 'Arial'; text-align: center; padding-top: 50px; }
+    h1 { font-size: 48px; }
+    button { background: lime; color: black; padding: 20px; font-size: 20px; border: none; border-radius: 10px; }
+  </style>
+</head>
+<body>
+  <h1>Omnitrix Activated</h1>
+  <button onclick="playSound()">Transform!</button>
+  <audio id="transformSound" src="sounds/transform.mp3" preload="auto"></audio>
+  <script>
+    function playSound() {
+      document.getElementById('transformSound').play();
+    }
+  </script>
+</body>
+</html>
